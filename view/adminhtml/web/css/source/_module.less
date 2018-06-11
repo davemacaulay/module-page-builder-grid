@@ -14,6 +14,8 @@
         grid-template-rows: 270px 370px 270px;
 
         .pagebuilder-content-type-wrapper {
+            height: 100%;
+
             &:nth-child(1) {
                 grid-column: ~"2 / 4";
                 grid-row: 1;
@@ -35,15 +37,11 @@
                 grid-row: 3;
             }
 
-            .pagebuilder-content-type-wrapper-inner {
+            .pagebuilder-homepage-item {
                 height: 100%;
 
-                .pagebuilder-homepage-item {
+                > .element-children {
                     height: 100%;
-
-                    > .element-children {
-                        height: 100%;
-                    }
                 }
             }
         }
