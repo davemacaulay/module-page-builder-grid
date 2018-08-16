@@ -1,7 +1,7 @@
 define([
     'jquery',
     'knockout',
-    'uiEvents',
+    'Magento_PageBuilder/js/events',
     'underscore',
     'Magento_PageBuilder/js/content-type/preview-collection',
     'Magento_PageBuilder/js/content-type-factory',
@@ -22,7 +22,7 @@ define([
 
         PreviewCollection.call(this, parent, config, stageId);
 
-        events.on("homepage-grid:contentType:dropped:create", function (args) {
+        events.on("homepage-grid:dropAfter", function (args) {
             if (args.id === self.parent.id && self.parent.children().length === 0) {
                 // Once the grid is ready, let's add in our children
                 self.populateGrid();

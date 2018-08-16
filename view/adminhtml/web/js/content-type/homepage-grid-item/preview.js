@@ -25,12 +25,12 @@ define([
      *
      * @returns {*}
      */
-    Preview.prototype.retrieveOptions = function () {
+    Preview.prototype.retrieveOptions = function retrieveOptions() {
         var options = $super.retrieveOptions.call(this, arguments);
-
-        return _.filter(options, function (option) {
-            return option.code !== "move" &&  option.code !== "duplicate" && option.code !== "remove";
-        });
+        delete options.move;
+        delete options.duplicate;
+        delete options.remove;
+        return options;
     };
 
     return Preview;

@@ -10,7 +10,7 @@
         <item name="js_config" xsi:type="array">
             <item name="provider" xsi:type="string">pagebuilder_homepage_grid_item_form.pagebuilder_homepage_grid_item_form_data_source</item>
         </item>
-        <item name="label" xsi:type="string" translate="true">Row</item>
+        <item name="label" xsi:type="string" translate="true">Grid Item</item>
     </argument>
     <settings>
         <deps>
@@ -44,7 +44,7 @@
                 <link name="hideLabel">${$.name}.appearance:options</link>
             </imports>
         </settings>
-        <field name="appearance" formElement="select" sortOrder="10" component="Magento_PageBuilder/js/form/element/dependent-select">
+        <field name="appearance" formElement="select" sortOrder="10" component="Magento_PageBuilder/js/form/element/dependent-visual-select">
             <argument name="data" xsi:type="array">
                 <item name="config" xsi:type="array">
                     <item name="default" xsi:type="string">default</item>
@@ -64,7 +64,7 @@
             <formElements>
                 <select>
                     <settings>
-                        <options class="AppearanceSourceRow" />
+                        <options class="AppearanceSourceHomepageGridItem" />
                     </settings>
                 </select>
             </formElements>
