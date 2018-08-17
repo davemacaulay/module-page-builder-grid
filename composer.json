@@ -13,7 +13,11 @@
   "authors": [
     {
       "name": "Dave Macaulay",
-      "email": "dmacaulay@magento.com"
+      "email": "macaulay@adobe.com"
+    },
+    {
+      "name": "Hwashiang Yu",
+      "email": "hwyu@adobe.com"
     }
   ],
   "autoload": {
@@ -21,7 +25,7 @@
       "registration.php"
     ],
     "psr-4": {
-      "DaveMacaulay\\PageBuilderDEmo\\": ""
+      "SamplePageBuilderModule\\PageBuilderDemo\\": ""
     }
   }
 }

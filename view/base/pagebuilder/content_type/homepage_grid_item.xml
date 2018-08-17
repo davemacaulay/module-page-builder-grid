@@ -63,4 +63,9 @@
             </appearance>
         </appearances>
     </type>
+    <type name="column">
+        <parents default_policy="deny">
+            <parent name="homepage-grid-item" policy="allow"/>
+        </parents>
+    </type>
 </config>
