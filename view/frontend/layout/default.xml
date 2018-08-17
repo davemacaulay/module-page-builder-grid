@@ -7,18 +7,16 @@
 -->
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
-        <referenceBlock name="head.components">
-            <block class="Magento\PageBuilder\Block\WidgetInitializer" name="pagebuilder.widget.initializer" template="Magento_PageBuilder::widget_initializer.phtml">
-                <arguments>
-                    <argument name="config" xsi:type="array">
-                        <item name="homepage-grid" xsi:type="array">
-                            <item name="default" xsi:type="array">
-                                <item name="component" xsi:type="string">DaveMacaulay_PageBuilderGrid/js/content-type/homepage-grid/appearance/default/widget</item>
-                            </item>
+        <referenceBlock name="pagebuilder.widget.initializer">
+            <arguments>
+                <argument name="config" xsi:type="array">
+                    <item name="homepage-grid" xsi:type="array">
+                        <item name="default" xsi:type="array">
+                            <item name="component" xsi:type="string">DaveMacaulay_PageBuilderGrid/js/content-type/homepage-grid/appearance/default/widget</item>
                         </item>
-                    </argument>
-                </arguments>
-            </block>
+                    </item>
+                </argument>
+            </arguments>
         </referenceBlock>
     </body>
 </page>
