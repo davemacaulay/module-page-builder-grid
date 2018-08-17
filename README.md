@@ -13,8 +13,10 @@ This module contains two content types, both with different purposes:
 ### Example
 Within this module we provide the master storage format contents for the luma homepage that's been presented alongside this module.
 
-[Luma Homepage Storefront](examples/luma_homepage_storefront.png "Luma Homepage Storefront")
+**Admin View:**
+![Luma Homepage Admin](examples/luma_homepage_admin.png "Luma Homepage Admin")
 
-[Luma Homepage Admin](examples/luma_homepage_admin.png "Luma Homepage Admin")
+**Storefront View:**
+![Luma Homepage Storefront](examples/luma_homepage_storefront.png "Luma Homepage Storefront")
 
 This example can be imported into any Magento 2.3+ instance with Page Builder installed alongside this module. This can be done by updating the entities content to that provided in `examples/luma_homepage.html`.
