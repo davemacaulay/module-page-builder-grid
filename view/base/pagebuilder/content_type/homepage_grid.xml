@@ -12,12 +12,12 @@
           preview_component="DaveMacaulay_PageBuilderGrid/js/content-type/homepage-grid/preview"
           master_component="Magento_PageBuilder/js/content-type/master-collection"
           form="pagebuilder_homepage_grid_form"
-          group="layout"
+          menu_section="layout"
           icon="icon-pagebuilder-row"
           sortOrder="1"
           translate="label">
         <parents default_policy="deny">
-            <parent name="stage" policy="allow"/>
+            <parent name="root-container" policy="allow"/>
         </parents>
         <children default_policy="deny">
             <child name="homepage-grid-item" policy="allow"/>
@@ -26,7 +26,7 @@
             <appearance default="true"
                         name="default"
                         preview_template="DaveMacaulay_PageBuilderGrid/content-type/homepage-grid/default/preview"
-                        render_template="DaveMacaulay_PageBuilderGrid/content-type/homepage-grid/default/master"
+                        master_template="DaveMacaulay_PageBuilderGrid/content-type/homepage-grid/default/master"
                         reader="Magento_PageBuilder/js/master-format/read/configurable">
                 <elements>
                     <element name="main">
@@ -45,7 +45,7 @@
                         <style name="min_height" source="min_height" converter="Magento_PageBuilder/js/converter/style/remove-px"/>
                         <style name="margins" storage_key="margins_and_padding" reader="Magento_PageBuilder/js/property/margins" converter="Magento_PageBuilder/js/converter/style/margins" preview_converter="Magento_PageBuilder/js/content-type/row/converter/style/margins"/>
                         <style name="padding" storage_key="margins_and_padding" reader="Magento_PageBuilder/js/property/paddings" converter="Magento_PageBuilder/js/converter/style/paddings" preview_converter="Magento_PageBuilder/js/content-type/row/converter/style/paddings"/>
-                        <attribute name="name" source="data-role"/>
+                        <attribute name="name" source="data-content-type"/>
                         <attribute name="appearance" source="data-appearance"/>
                         <attribute name="background_images" source="data-background-images"/>
                         <css name="css_classes">

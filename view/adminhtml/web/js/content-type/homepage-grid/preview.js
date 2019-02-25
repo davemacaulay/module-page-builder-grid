@@ -23,7 +23,7 @@ define([
         PreviewCollection.call(this, parent, config, stageId);
 
         events.on("homepage-grid:dropAfter", function (args) {
-            if (args.id === self.parent.id && self.parent.children().length === 0) {
+            if (args.id === self.contentType.id && self.contentType.children().length === 0) {
                 // Once the grid is ready, let's add in our children
                 self.populateGrid();
             }
@@ -40,12 +40,13 @@ define([
 
         // Create 5 homepage grid items
         for (i = 0; i < 5; i++) {
+            console.log(this.contentType);
             createContentType(
                 pageBuilderConfig.getContentTypeConfig("homepage-grid-item"),
-                this.parent,
-                this.parent.stageId
+                this.contentType,
+                this.contentType.stageId
             ).then(function (gridItem) {
-                self.parent.addChild(gridItem);
+                self.contentType.addChild(gridItem);
             });
         }
     };
