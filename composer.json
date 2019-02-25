@@ -25,7 +25,7 @@
       "registration.php"
     ],
     "psr-4": {
-      "SamplePageBuilderModule\\PageBuilderDemo\\": ""
+      "DaveMacaulay\\PageBuilderGrid\\": ""
     }
   }
 }
