@@ -1,6 +1,7 @@
 {
   "name": "davemacaulay/module-page-builder-grid",
   "description": "Example Page Builder Grid Module",
+  "version": "1.0.0",
   "require": {
     "magento/framework": "*",
     "magento/module-page-builder": "*",
